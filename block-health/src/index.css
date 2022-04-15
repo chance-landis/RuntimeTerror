@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+/* Navigation CSS */
+
 #navbar {
   display: flex;
   align-items: center;
@@ -42,3 +44,94 @@ code {
 .activeLink {
   color:#769E90;
 }
+
+/* Worker page CSS */
+
+#worker {
+  display: flex;
+  flex-direction: column;
+}
+
+#worker img {
+  filter: brightness(80%);
+}
+
+#worker .header {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+#worker h1 {
+  position: absolute;
+  font-size: 80px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%)
+}
+
+#worker .img_wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+#worker .bubble_title {
+  text-align: center;
+  font-size: 30px;
+}
+
+#worker .bubble_container {
+  text-align: center;
+  width: 35%;
+  margin: auto;
+
+  list-style-position: inside;
+}
+
+#worker ul {
+  display: inline-block;
+  text-align: left;
+}
+
+#worker .bubble {
+  background: #56E790;
+  margin: 20px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #47A76D;
+  border-radius: 50px;
+}
+
+#worker .bubble h3 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+#worker .bubble li {
+  font-size: 19px;
+}
+
+/* Actions and buttons */
+
+#worker .action_wrapper {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 25px;
+}
+
+#worker button {
+  background-color: #56E790;
+  border-radius:28px;
+	border:5px solid #18ab29;
+  font-size: 25px;
+  padding: 15px;
+}
+
+
+
+
