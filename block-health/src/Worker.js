@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 export function WorkerPage() {
     return (
@@ -44,11 +45,11 @@ export function WorkerPage() {
             <div className='action_wrapper'>
                 <div className='wallet_wrapper'>
                     <h3>Need help creating a wallet?</h3>
-                    <button>How to create a wallet</button>
+                    <Link className="button" to="/createwallet">How To Create A Wallet</Link>
                 </div>
                 <div className='certification_wrapper'>
                     <h3>Looking to verify a certification?</h3>
-                    <button>Verify Certification</button>
+                    <Link className="button" to="/hashverify">Verify Certification</Link>
                 </div>
             </div>
         </div>
