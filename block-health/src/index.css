@@ -114,7 +114,7 @@ code {
   font-size: 19px;
 }
 
-/* Actions and buttons */
+/* Worker Actions and Buttons */
 
 #worker .action_wrapper {
   display: flex;
@@ -181,4 +181,42 @@ code {
   border-radius: 50px;
   text-align: center;
   font-size: 22px;
+}
+
+/* Create Wallet / MetaMask instruction Page */
+
+#createwallet {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#createwallet .header {
+  display: flex;
+  flex-basis: auto;
+  position: relative;
+  text-align: center;
+  flex-direction: row;
+  width: 45%;
+  margin: auto;
+}
+
+#createwallet .header h1 {
+  color:#56E790;
+  margin-top: 40px;
+  font-size: 52px;
+}
+
+#createwallet .intro {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#createwallet .step {
+  font-size: 40px;
+  text-align: center;
+  color: #56E790;
+}
+
+#createwallet .instructions {
+  font-size: 24px;
 }
