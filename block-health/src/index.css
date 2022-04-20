@@ -143,6 +143,7 @@ code {
 
 #hashverify .wrapper {
   margin-top: 15%;
+  text-align: center;
 }
 
 #hashverify .form {
@@ -168,4 +169,16 @@ code {
   margin-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#hashverify .verification {
+  background: #56E790;
+  margin: 20px;
+  padding: 20px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #47A76D;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 22px;
 }
