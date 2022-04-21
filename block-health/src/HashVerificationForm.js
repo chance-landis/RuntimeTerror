@@ -39,7 +39,7 @@ export class HashVerificationForm extends React.Component {
 
     render() {
         return (
-            <div id ='hashverify'>
+            <div className='hashverify'>
                 <div className='wrapper'>
                     <h1>Enter Certificate Transaction Hash to Verify:</h1>
                     <form className='form' onSubmit={this.handleSubmit}>

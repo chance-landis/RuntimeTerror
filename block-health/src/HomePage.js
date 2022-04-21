@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomePage() {
     return (
-        <div id="home">
+        <div className="home">
             <div className='wrapper'>
                 <h2>Use the power of the blockchain to secure your certifications and empower workers</h2>
 

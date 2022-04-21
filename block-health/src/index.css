@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-/* Navigation CSS */
+/* Navigation Bar CSS */
 
 #navbar {
   display: flex;
@@ -45,24 +45,63 @@ code {
   color:#769E90;
 }
 
+/* Footer CSS */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding-bottom: 5rem;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position:absolute;
+  bottom:0;
+  background: #1F2E25;
+}
+
+#footer h1 {
+  margin-left: auto;
+  margin-right: 2vw;
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 2vw;
+  font-size: 20px;
+  color: white;
+}
+
+.activeLink {
+  color:#769E90;
+}
+
 /* Worker page CSS */
 
-#worker {
+.worker {
   display: flex;
   flex-direction: column;
 }
 
-#worker img {
+.worker img {
   filter: brightness(80%);
 }
 
-#worker .header {
+.worker .header {
   position: relative;
   text-align: center;
   color: black;
 }
 
-#worker h1 {
+.worker h1 {
   position: absolute;
   font-size: 80px;
   width: 100%;
@@ -71,18 +110,18 @@ code {
   transform: translate(-50%, -100%)
 }
 
-#worker .img_wrapper {
+.worker .img_wrapper {
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
 
-#worker .bubble_title {
+.worker .bubble_title {
   text-align: center;
   font-size: 30px;
 }
 
-#worker .bubble_container {
+.worker .bubble_container {
   text-align: center;
   width: 35%;
   margin: auto;
@@ -90,12 +129,12 @@ code {
   list-style-position: inside;
 }
 
-#worker ul {
+.worker ul {
   display: inline-block;
   text-align: left;
 }
 
-#worker .bubble {
+.worker .bubble {
   background: #56E790;
   margin: 20px;
   border-style: solid;
@@ -104,19 +143,19 @@ code {
   border-radius: 50px;
 }
 
-#worker .bubble h3 {
+.worker .bubble h3 {
   font-size: 30px;
   margin-bottom: 0px;
   margin-top: 15px;
 }
 
-#worker .bubble li {
+.worker .bubble li {
   font-size: 19px;
 }
 
 /* Worker Actions and Buttons */
 
-#worker .action_wrapper {
+.worker .action_wrapper {
   display: flex;
   margin-bottom: 50px;
   justify-content: space-evenly;
@@ -124,36 +163,36 @@ code {
   font-size: 25px;
 }
 
-#worker .button {
+.worker .button {
   background-color: #56E790;
   text-decoration: none;
+  box-shadow: 2px 2px #47A76D;
   border-radius:28px;
-	border:5px solid #18ab29;
   font-size: 25px;
   padding: 15px;
 }
 
 /* Hash Verification Page */
 
-#hashverify {
+.hashverify {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#hashverify .wrapper {
+.hashverify .wrapper {
   margin-top: 15%;
   text-align: center;
 }
 
-#hashverify .form {
+.hashverify .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#hashverify .hashinput {
+.hashverify .hashinput {
   width: 500px;
   height: 50px;
   border-radius:28px;
@@ -161,7 +200,7 @@ code {
   padding-right: 25px;
 }
 
-#hashverify .submit {
+.hashverify .submit {
   background-color: #56E790;
   text-decoration: none;
   border-radius:28px;
@@ -171,7 +210,7 @@ code {
   padding-right: 15px;
 }
 
-#hashverify .verification {
+.hashverify .verification {
   background: #56E790;
   margin: 20px;
   padding: 20px;
@@ -185,45 +224,51 @@ code {
 
 /* Create Wallet / MetaMask instruction Page */
 
-#createwallet {
-  margin-left: 10%;
-  margin-right: 10%;
+.createwallet {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-#createwallet .header {
+.createwallet .header {
   display: flex;
-  flex-basis: auto;
   position: relative;
-  text-align: center;
+  align-items: center;
+  text-align: left;
   flex-direction: row;
-  width: 45%;
-  margin: auto;
+  width: 100%;
 }
 
-#createwallet .header h1 {
+.createwallet .header img {
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: 2vw;
+}
+
+.createwallet .header h1 {
   color:#56E790;
+  width: 35%;
   margin-top: 40px;
-  font-size: 52px;
+  font-size: 72px;
 }
 
-#createwallet .intro {
+.createwallet .intro {
   font-size: 24px;
   font-weight: bold;
 }
 
-#createwallet .step {
+.createwallet .step {
   font-size: 40px;
   text-align: center;
   color: #56E790;
 }
 
-#createwallet .instructions {
+.createwallet .instructions {
   font-size: 24px;
 }
 
 /* Home Page */
 
-#home .wrapper {
+.home .wrapper {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -231,47 +276,214 @@ code {
   margin: auto;
 }
 
-#home button {
+.home button {
   width: 100px;
   margin: auto;
 }
 
 /* Issuer Login page */
 
-#issuerlogin #input {
+.issuerlogin {
   display: flex;
-  margin: auto;
-  margin-top: 250px;
-  width: 10%;
-  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.issuerlogin .wrapper {
+  margin-top: 10%;
+}
+
+.issuerlogin .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.issuerlogin label {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.issuerlogin input {
+  width: 300px;
+  height: 50px;
+  border-radius:28px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.issuerlogin .link {
+  text-align: left;
+  color: blue;
+  font-size: 16px;
+}
+
+.issuerlogin .login_link {
+  display:flex;
+  text-decoration: none;
+}
+
+.issuerlogin .login {
+  background-color: #56E790;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  box-shadow: 2px 2px #47A76D;
+  border-radius:28px;
+  font-size: 24px;
 }
 
 /* Create Issuer Login Page */
 
-#issuercreatelogin #input {
-  display:flex;
-  margin: auto;
-  margin-top: 250px;
-  width: 10%;
-  flex-direction:column;
+.issuercreatelogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.issuercreatelogin .wrapper {
+  margin-top: 10%;
+}
+
+.issuercreatelogin .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.issuercreatelogin label {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.issuercreatelogin input {
+  width: 300px;
+  height: 50px;
+  border-radius:28px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.issuercreatelogin .create_account {
+  background-color: #56E790;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  box-shadow: 2px 2px #47A76D;
+  border-radius:28px;
+  font-size: 24px;
 }
 
 /* Issuer Mint Page */
 
-#mint #input {
-  display:flex;
-  margin: auto;
-  margin-top: 250px;
-  width: 10%;
-  flex-direction:column;
+.mint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mint .form {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mint label {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-left: 25px;
+}
+
+.mint input {
+  width: 300px;
+  height: 50px;
+  border-radius:28px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.mint .rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
+  background-color: lightgrey;
+}
+
+.mint .mint_info {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  padding: 0;
+  text-align: center;
+}
+
+.mint .upload_button {
+  background-color: #56E790;
+  text-decoration: none;
+  border-radius:28px;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mint .mint_button {
+  background-color: #56E790;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius:28px;
+  font-size: 32px;
+  margin-top: 15px;
+  padding: 5px;
 }
 
 /* Mint Success Page */
 
-#mint-success {
+.mint_success {
   display:flex;
   flex-direction:column;
-  margin: auto;
-  margin-top: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mint_success .header {
+  text-align: left;
+  font-size: 32px;
+}
+
+.mint_success .transaction {
+  display: flex;
+  flex-direction: column;
+  background: #56E790;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border-style: solid;
+  border-width: thick;
+  border-color: #47A76D;
+  border-radius: 50px;
+}
+
+.mint_success .hash  p{
+  font-size: 24px;
   text-align: center;
 }
