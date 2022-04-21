@@ -220,3 +220,58 @@ code {
 #createwallet .instructions {
   font-size: 24px;
 }
+
+/* Home Page */
+
+#home .wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+#home button {
+  width: 100px;
+  margin: auto;
+}
+
+/* Issuer Login page */
+
+#issuerlogin #input {
+  display: flex;
+  margin: auto;
+  margin-top: 250px;
+  width: 10%;
+  flex-direction:column;
+}
+
+/* Create Issuer Login Page */
+
+#issuercreatelogin #input {
+  display:flex;
+  margin: auto;
+  margin-top: 250px;
+  width: 10%;
+  flex-direction:column;
+}
+
+/* Issuer Mint Page */
+
+#mint #input {
+  display:flex;
+  margin: auto;
+  margin-top: 250px;
+  width: 10%;
+  flex-direction:column;
+}
+
+/* Mint Success Page */
+
+#mint-success {
+  display:flex;
+  flex-direction:column;
+  margin: auto;
+  margin-top: 250px;
+  text-align: center;
+}
