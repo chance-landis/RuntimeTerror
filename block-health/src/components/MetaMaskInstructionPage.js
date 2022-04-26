@@ -7,7 +7,7 @@ export function MetaMaskInstructionPage() {
 
                 <div className='header'>
                     <h1> How to make a MetaMask Wallet</h1>
-                    <img src={require('./img/MetaMask_Fox.svg.png')} alt='metamask logo' width='200' height='200'></img>
+                    <img src={require('../img/MetaMask_Fox.svg.png')} alt='metamask logo' width='200' height='200'></img>
                 </div>
 
                 <div className='intro'>

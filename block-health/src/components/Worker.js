@@ -8,7 +8,7 @@ export function WorkerPage() {
 
                 <div className='header'>
                     <div className='img_wrapper'>
-                        <img src={require('./img/healthcare_professionals.jpg')} alt='medical professionals'></img>
+                        <img src={require('../img/healthcare_professionals.jpg')} alt='medical professionals'></img>
                     </div>
                     <h1>Regain owership of your certification</h1>
                 </div>

@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavBar } from './common/NavigationBar.js';
 import { Route, Routes } from 'react-router-dom';
-import { WorkerPage } from './Worker.js';
-import { HashVerificationForm } from './HashVerificationForm.js';
-import { MetaMaskInstructionPage } from './MetaMaskInstructionPage.js';
-import { HomePage } from './HomePage.js';
-import { IssuerLoginForm } from './IssuerLoginForm.js';
-import { IssuerCreateLoginForm } from './IssuerCreateLoginForm.js';
-import { IssuerMintPage } from './IssuerMintPage.js';
-import { MintSuccessPage } from './MintSuccessPage.js';
+import { WorkerPage } from './components/Worker.js';
+import { HashVerificationForm } from './components/HashVerificationForm.js';
+import { MetaMaskInstructionPage } from './components/MetaMaskInstructionPage.js';
+import { HomePage } from './components/HomePage.js';
+import { IssuerLoginForm } from './components/IssuerLoginForm.js';
+import { IssuerCreateLoginForm } from './components/IssuerCreateLoginForm.js';
+import { IssuerMintPage } from './components/IssuerMintPage.js';
+import { MintSuccessPage } from './components/MintSuccessPage.js';
 import { Footer } from './common/Footer.js';
 
 function App() {
