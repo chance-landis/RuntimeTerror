@@ -329,9 +329,12 @@ code {
 .issuerlogin .login {
   background-color: #56E790;
   text-align: center;
+  margin: auto;
   margin-top: 20px;
   text-decoration: none;
   padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: black;
   box-shadow: 2px 2px #47A76D;
   border-radius:28px;

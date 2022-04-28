@@ -1,23 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '../database/Database.js'
 
-export class IssuerCreateLoginForm extends React.Component {
+export function IssuerCreateLoginForm() {
 
-    render() {
-        return (
-            <div className='issuercreatelogin'>
-                <div className='wrapper'>
-                    <form className='form'>
-                        <label for="issuer-id">Create Issuer ID:</label>
-                        <input type="text" class="input-bubble" placeholder="Issuer ID"/>
-                        <label for="issuer-pw">Create Issuer Password:</label>
-                        <input type="text" class="input-bubble" placeholder="Password"/>
-                        <label for="issuer-pw-create" id="input-id">Confirm Issuer Password:</label>
-                        <input type="text" class="input-bubble" placeholder="Confirm Password"/>
-                        <Link className="create_account" to="/issuer/login">Create Issuer Account</Link>
-                    </form>
-                </div>
+    const navigate = useNavigate()
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+    return (
+        <div className='issuercreatelogin'>
+            <div className='wrapper'>
+                <form className='form'>
+                    <label>Create Issuer ID:</label>
+                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" className="input-bubble" placeholder="Email"/>
+                    <label>Create Issuer Password:</label>
+                    <input value={password} onChange={(e) => setPassword(e.target.value)} type="text" className="input-bubble" placeholder="Password"/>
+                    <button className="create_account" onClick={() => signup(email, password, navigate)}>Create Issuer Account</button>
+                </form>
             </div>
-        )
+        </div>
+    )
+}
+
+async function signup(email, password, navigate) {
+    try {
+        const {user, error} = await supabase.auth.signUp({email, password})
+        if (error) {
+            throw error
+        }
+        alert('Sign Up Success!')
+        navigate('/issuer/login', {replace:true})
+    } catch (error) {
+        console.log(error.message)
     }
 }
