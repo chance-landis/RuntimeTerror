@@ -8,7 +8,8 @@ function NavBar() {
             <NavLink className='link' to='/' activeclassname='activeLink'>Home</NavLink>
             <NavLink className='link' to='/workers' activeclassname='activeLink'>Workers</NavLink>
             <NavLink className='link' to='/issuer/login' activeclassname='activeLink'>Issuers</NavLink>
-            <NavLink className='login' to='/login' activeclassname='activeLink'>Log In</NavLink>
+            <NavLink className='link' to='/about' activeclassname='activeLink'>About</NavLink>
+            <NavLink className='login' to='/issuer/login' activeclassname='activeLink'>Log In</NavLink>
         </nav>  
     );
 }
