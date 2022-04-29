@@ -3,12 +3,19 @@ import certLogo from './img/cert.png'
 import walletImg from './img/wallet.png'
 import shieldImg from './img/shield.png'
 import Button from '@mui/material/Button'
+import homepageimg from './img/homepagebg.png'
 
 function HomePage() {
     return (
         <div className="home">
+            <div className='imgContainer'>
+                <img className="heroImg" src= {homepageimg} alt='Medical Iconography Background Image'/>
+                <div className='centerText'>
+                    <h1>Use the power of the blockchain to secure your certifications and empower workers</h1>
+                </div>
+            </div>
+
             <div className='wrapper'>
-                <h2>Use the power of the blockchain to secure your certifications and empower workers</h2>
 
                 <h3>BlockHealth is a blockchain solution that empowers workers. We give back individual ownership
                 to Healthcare certifications, all powered by Ethereum.</h3>
