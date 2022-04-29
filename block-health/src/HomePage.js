@@ -2,6 +2,7 @@ import React from 'react';
 import certLogo from './img/cert.png'
 import walletImg from './img/wallet.png'
 import shieldImg from './img/shield.png'
+import Button from '@mui/material/Button'
 
 function HomePage() {
     return (
@@ -31,7 +32,9 @@ function HomePage() {
                 </div>
 
                 <h3>Learn more about BlockHealth. Talk to the team.</h3>
-                <button>Contact Us</button>
+                <div>
+                    <Button variant="contained">Contact Us</Button>
+                </div>
             </div>
         </div>
     );

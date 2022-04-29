@@ -11,11 +11,24 @@ import { IssuerCreateLoginForm } from './IssuerCreateLoginForm.js';
 import { IssuerMintPage } from './IssuerMintPage.js';
 import { MintSuccessPage } from './MintSuccessPage.js';
 import { Footer } from './common/Footer.js';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#8effc1',
+      main: '#56e790',
+      dark: '#00b462',
+      contrastText: '#000',
+    },
+  }
+})
 
 function App() {
 
-  return (
+  return(
     <div id='page-container'>
+      <ThemeProvider theme={theme}>
       <NavBar/>
       <Routes>
         <Route path="/" element={<HomePage/>}></Route>
@@ -29,6 +42,7 @@ function App() {
         <Route path='/issuer/mintsuccess' element={<MintSuccessPage/>}></Route>
       </Routes>
       <Footer/>
+      </ThemeProvider>
     </div>
   );
   

@@ -276,11 +276,6 @@ code {
   margin: auto;
 }
 
-.home button {
-  width: 100px;
-  margin: auto;
-}
-
 .imgLayout {
   display: flex;
   flex-direction:row;

@@ -14,7 +14,7 @@ export function AboutPage() {
                     BlockHealth is a Capstone Project for the Information School at the University
                     of Washington. Development took place over Winter and Spring 2022 Quarters
 
-                    The project is sponsored by Frank Martinex of Last Myle LLC.
+                    The project is sponsored by Frank Martinez of Last Myle LLC.
                 </h3>
             </div>
             <div className="aboutLayout">
