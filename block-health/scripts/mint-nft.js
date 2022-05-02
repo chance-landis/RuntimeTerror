@@ -48,6 +48,8 @@ async function mintNFT(tokenURI) {
         .catch((err) => {
         console.log(" Promise failed:", err)
         })
-  }
+}
 
-  mintNFT("https://gateway.pinata.cloud/ipfs/QmPEEHvS6QaCfkN7iGLxbfHYqTvMV8svCtbeUi72tEN9mK")
+document.getElementById('mint-button').addEventListener('click', function() {
+    mintNFT("https://gateway.pinata.cloud/ipfs/QmPEEHvS6QaCfkN7iGLxbfHYqTvMV8svCtbeUi72tEN9mK")
+})
