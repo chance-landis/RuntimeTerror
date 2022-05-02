@@ -23,7 +23,7 @@ export function IssuerCreateLoginForm() {
             setError('')
             setLoading(true)
             await signUp(emailRef.current.value, passwordRef.current.value)
-            navigate('/issuer/login')
+            navigate('/issuer/mint')
         } catch {
             setError('Failed to create account')
         }
