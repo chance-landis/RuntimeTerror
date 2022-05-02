@@ -1,4 +1,3 @@
-import { setUserProperties } from 'firebase/analytics';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext.js'
@@ -15,13 +14,13 @@ function NavBar() {
             await logout()
         } catch {
             setError('Failed to log out')
-            console.log(error)
         }
     }
 
     let userAction;
     let issuerNavTo;
 
+    // If the user is currently logged in, display user information and logout link
     if (currentUser) {
         userAction = <div className='userAction'>
                         <h3>Currently logged in as {currentUser.email}</h3>  

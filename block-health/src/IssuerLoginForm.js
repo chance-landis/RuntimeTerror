@@ -4,12 +4,14 @@ import { useNavigate, Link } from 'react-router-dom'
 
 export function IssuerLoginForm() {
 
+    const navigate = useNavigate()
+    const { login } = useAuth()
     const emailRef = useRef()
     const passwordRef = useRef()
-    const { login } = useAuth()
+
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
-    const navigate = useNavigate()
+
 
     async function handleSubmit(e) {
         e.preventDefault()
