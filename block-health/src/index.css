@@ -34,6 +34,26 @@ code {
   color: white;
 }
 
+.userAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:auto;
+  margin-right: 2vw;
+}
+
+.userAction h3 {
+  color: #56E790;
+  margin-right: 3vw;
+}
+
+.userAction .logout {
+  text-decoration: none;
+  text-emphasis: none;
+  font-size: 20px;
+  color: white;
+}
+
 .link {
   text-decoration: none;
   margin-left: 2vw;
@@ -321,12 +341,7 @@ code {
   font-size: 16px;
 }
 
-.issuerlogin .login_link {
-  display:flex;
-  text-decoration: none;
-}
-
-.issuerlogin .login {
+.issuerlogin button {
   background-color: #56E790;
   text-align: center;
   margin-top: 20px;

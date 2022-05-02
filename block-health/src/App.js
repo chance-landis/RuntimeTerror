@@ -10,23 +10,26 @@ import { IssuerCreateLoginForm } from './IssuerCreateLoginForm.js';
 import { IssuerMintPage } from './IssuerMintPage.js';
 import { MintSuccessPage } from './MintSuccessPage.js';
 import { Footer } from './common/Footer.js';
+import { AuthProvider } from './contexts/AuthContext.js'
 
 function App() {
 
   return (
     <div id='page-container'>
-      <NavBar/>
-      <Routes>
-        <Route path="/" element={<HomePage/>}></Route>
-        <Route path="/workers" element={<WorkerPage/>}></Route>
-        <Route path="/hashverify" element={<HashVerificationForm/>}></Route>
-        <Route path="/createwallet" element={<MetaMaskInstructionPage/>}></Route>
-        <Route path='/issuer/login' element={<IssuerLoginForm/>}></Route>
-        <Route path='/issuer/createaccount' element={<IssuerCreateLoginForm/>}></Route>
-        <Route path='/issuer/mint' element={<IssuerMintPage/>}></Route>
-        <Route path='/issuer/mintsuccess' element={<MintSuccessPage/>}></Route>
-      </Routes>
-      <Footer/>
+      <AuthProvider>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<HomePage/>}></Route>
+          <Route path="/workers" element={<WorkerPage/>}></Route>
+          <Route path="/hashverify" element={<HashVerificationForm/>}></Route>
+          <Route path="/createwallet" element={<MetaMaskInstructionPage/>}></Route>
+          <Route path='/issuer/login' element={<IssuerLoginForm/>}></Route>
+          <Route path='/issuer/createaccount' element={<IssuerCreateLoginForm/>}></Route>
+          <Route path='/issuer/mint' element={<IssuerMintPage/>}></Route>
+          <Route path='/issuer/mintsuccess' element={<MintSuccessPage/>}></Route>
+        </Routes>
+        <Footer/>
+      </AuthProvider>
     </div>
   );
   
