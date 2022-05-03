@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@alch/alchemy-web3": "^1.4.2",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.0.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
@@ -40,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "ethers": "^5.6.4",
+    "hardhat": "^2.9.3"
   }
 }
