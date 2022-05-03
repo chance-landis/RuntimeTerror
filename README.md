@@ -14,7 +14,7 @@ How can modern workers be empowered through blockchain technology to take indivi
 
 ---
 ### Figma
-[Figma Link]
+[https://www.figma.com/file/uFgghFu6QeSABNZT9hyOxu/BlockHealth](https://www.figma.com/file/uFgghFu6QeSABNZT9hyOxu/BlockHealth)
 
 ---
 ### Presentation

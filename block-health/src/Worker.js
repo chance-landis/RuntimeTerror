@@ -1,17 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import workerImg from './img/workerbg.png'
 
 export function WorkerPage() {
     return (
         <div className='worker'>
-            <div className='wrapper'>
 
-                <div className='header'>
-                    <div className='img_wrapper'>
-                        <img src={require('./img/healthcare_professionals.jpg')} alt='medical professionals'></img>
-                    </div>
+            <div className='imgContainer'>
+                <img className="heroImg" src= {workerImg} alt='Medical Iconography Background Image'/>
+                <div className='centerText'>
                     <h1>Regain owership of your certification</h1>
                 </div>
+            </div>
+
+            <div className='wrapper'>
 
                 <div className='bubble_title'>
                     <h2>Why Trust BlockHealth?</h2>

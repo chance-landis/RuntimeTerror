@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext.js'
+import LoginIcon from '@mui/icons-material/Login';
+import LogoutIcon from '@mui/icons-material/Logout';
+import Button from '@mui/material/Button'
 
 function NavBar() {
 
@@ -24,11 +27,13 @@ function NavBar() {
     if (currentUser) {
         userAction = <div className='userAction'>
                         <h3>Currently logged in as {currentUser.email}</h3>  
-                        <h4 className='logout' onClick={handleLogout} activeclassname='activeLink'>Log Out</h4>
+                        <Button variant="contained" onClick={handleLogout} endIcon={<LogoutIcon/>}>Logout</Button>
                      </div>
         issuerNavTo = '/issuer/mint'
     } else {
-        userAction = <div className='userAction'><NavLink className='login' to='/issuer/login' activeclassname='activeLink'>Log In</NavLink></div>
+        userAction = <NavLink className='login' to='/issuer/login' activeclassname='activeLink'>
+                        <Button variant="contained" endIcon={<LoginIcon/>}>Login</Button>
+                     </NavLink>
         issuerNavTo = '/issuer/login'
     }
 
@@ -38,6 +43,7 @@ function NavBar() {
             <NavLink className='link' to='/' activeclassname='activeLink'>Home</NavLink>
             <NavLink className='link' to='/workers' activeclassname='activeLink'>Workers</NavLink>
             <NavLink className='link' to={ issuerNavTo } activeclassname='activeLink'>Issuers</NavLink>
+            <NavLink className='link' to='/about' activeclassname='activeLink'>About</NavLink>
             { userAction }
         </nav>  
     );
