@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import workerImg from './img/workerbg.png'
+import Button from '@mui/material/Button'
 
 export function WorkerPage() {
     return (
@@ -57,12 +57,12 @@ export function WorkerPage() {
 
                     <div className='wallet_wrapper'>
                         <h3>Need help creating a wallet?</h3>
-                        <Link className="button" to="/createwallet">How To Create A Wallet</Link>
+                        <Button variant="contained"href="/createwallet">How To Create A Wallet</Button>
                     </div>
 
                     <div className='certification_wrapper'>
                         <h3>Looking to verify a certification?</h3>
-                        <Link className="button" to="/hashverify">Verify Certification</Link>
+                        <Button variant="contained"href="/hashverify">Verify Certification</Button>
                     </div>
 
                 </div>
