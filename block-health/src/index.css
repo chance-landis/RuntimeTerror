@@ -297,7 +297,7 @@ code {
 
 .heroImg{
   object-fit: cover;
-  height: 200px;
+  height: 220px;
   width: 100%;
 }
 
@@ -310,12 +310,15 @@ code {
 
 .imgLayout {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imgCard{
-  margin-left:15px;
-  margin-right:15px;
+  margin-left:83px;
+  margin-right:83px;
+  width: 310px;
 }
 
 .homeImg {

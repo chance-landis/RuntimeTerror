@@ -39,7 +39,7 @@ function NavBar() {
 
     return (
         <nav id='navbar'>
-            <h1> BlockHealth </h1>
+            <NavLink className='link' to='/' activeclassname='activeLink'><h1> BlockHealth </h1></NavLink>
             <NavLink className='link' to='/' activeclassname='activeLink'>Home</NavLink>
             <NavLink className='link' to='/workers' activeclassname='activeLink'>Workers</NavLink>
             <NavLink className='link' to={ issuerNavTo } activeclassname='activeLink'>Issuers</NavLink>
