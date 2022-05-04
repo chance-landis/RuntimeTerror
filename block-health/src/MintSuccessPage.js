@@ -8,17 +8,17 @@ export function MintSuccessPage() {
                     <p>Congratulations</p>
 
                     <text>Certification Minted to Wallet ID:</text>
-                    <p>XXXXXXXXXXXXXXXX</p>
+                    <p>0xf0798F6498F7c6C3aF8BEA680e0380a9928Ec787</p>
                 </div>
 
                 <div className='transaction'>
                     <text>Find proof of transaction here:</text>
-                    <a href="https://etherscan.io/">https://etherscan.io/</a>
+                    <a href="https://ropsten.etherscan.io/tx/0xe4b5cd1370d5863ec381b9825e5e4dceedacbd921415a1b280e0a535ab764dba">https://ropsten.etherscan.io/tx/0xe4b5cd1370d5863ec381b9825e5e4dceedacbd921415a1b280e0a535ab764dba</a>
                 </div>
 
                 <div className='hash'>
                     <p>Unique Certification Transaction Hash:</p>
-                    <a href="">0x771c133c3a72e2d262ec3268cb79b8774cc173168ae823e66ce3cfb9243d1d92</a>
+                    <p>0xe4b5cd1370d5863ec381b9825e5e4dceedacbd921415a1b280e0a535ab764dba</p>
                 </div>
             </div>
         </div>
