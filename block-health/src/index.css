@@ -549,3 +549,8 @@ code {
   font-size: 24px;
   text-align: center;
 }
+
+.mint_success .hash {
+  font-size: 24px;
+  text-align: center;
+}
