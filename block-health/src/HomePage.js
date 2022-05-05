@@ -38,10 +38,7 @@ function HomePage() {
                     </div>
                 </div>
 
-                <h3>Learn more about BlockHealth. Talk to the team.</h3>
-                <div>
-                    <Button variant="contained">Contact Us</Button>
-                </div>
+                <h3>This project is now maintained by Last Myle LLC. Contact Frank Martinez at frank@lastmyle.co for more information</h3>
             </div>
         </div>
     );
