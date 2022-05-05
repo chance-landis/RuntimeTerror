@@ -9,7 +9,7 @@ export function WorkerPage() {
             <div className='imgContainer'>
                 <img className="heroImg" src= {workerImg} alt='Medical Iconography Background Image'/>
                 <div className='centerText'>
-                    <h1>Regain owership of your certification</h1>
+                    <h1>Regain ownership of your certification</h1>
                 </div>
             </div>
 

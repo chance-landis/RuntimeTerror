@@ -23,7 +23,7 @@ export class HashVerificationForm extends React.Component {
     }
 
     renderVerificationSuccessful() {
-        var _href = "https://etherscan.io/tx/" + this.state.hash
+        var _href = "https://ropsten.etherscan.io/tx/" + this.state.hash
 
         return (
             <div className='verification'>
