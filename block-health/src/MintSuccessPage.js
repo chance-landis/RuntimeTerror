@@ -25,7 +25,7 @@ export function MintSuccessPage() {
 
                 <div className='hash'>
                     <p>Unique Certification Transaction Hash:</p>
-                    <a className="hash" href="">{hash}</a>
+                    <a className="hash" href={_transactionRef}>{hash}</a>
                 </div>
             </div>
         </div>
