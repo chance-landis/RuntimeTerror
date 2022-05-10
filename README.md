@@ -9,13 +9,13 @@ Chance Landis, Spencer Pudists, Jordan Jones, Yashasvi J, Jacob Stozyk
 How can modern workers be empowered through blockchain technology to take individual ownership of their hard-earned worker credentials?
 
 ---
-### Features
-[Describe Features]
+### URL
+[https://block-health-18735.web.app/](https://block-health-18735.web.app/)
 
 ---
 ### Figma
 [https://www.figma.com/file/uFgghFu6QeSABNZT9hyOxu/BlockHealth](https://www.figma.com/file/uFgghFu6QeSABNZT9hyOxu/BlockHealth)
 
 ---
-### Presentation
+### Presentation Video
 [Presentation Slides]
