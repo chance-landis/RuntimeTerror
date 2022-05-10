@@ -2,7 +2,7 @@
 
 ## Our Team
 ### Runtime Terror
-Chance Landis, Spencer Pudists, Jordan Jones, Yashasvi J, Jacob Stozyk
+Chance Landis, Spencer Pudists, Jordan Jones, Jacob Stozyk
 
 ---
 ### Objective
