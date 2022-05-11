@@ -3,7 +3,6 @@ import chanceImg from './img/chance.png'
 import jordanImg from './img/jordan.png'
 import jacobImg from './img/jacob.png'
 import spencerImg from './img/spencer.png'
-import yashasviImg from './img/yashasvi.png'
 
 export function AboutPage() {
     return (
@@ -33,10 +32,6 @@ export function AboutPage() {
                 <div className='aboutCard'>
                     <img className="aboutImg" src={spencerImg} alt="Spencer Pudists"/>
                     <h4>Spencer Pudists</h4>
-                </div>
-                <div className='aboutCard'>
-                    <img className="aboutImg" src={yashasviImg} alt="Yashasvi J"/>
-                    <h4>Yashasvi J</h4>
                 </div>
             </div>
         </div>

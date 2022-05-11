@@ -2,7 +2,6 @@ import React from 'react';
 import certLogo from './img/cert.png'
 import walletImg from './img/wallet.png'
 import shieldImg from './img/shield.png'
-import Button from '@mui/material/Button'
 import homepageimg from './img/homepagebg.png'
 
 function HomePage() {
