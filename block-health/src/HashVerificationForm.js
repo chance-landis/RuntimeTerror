@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '@mui/material/Button'
 
 export class HashVerificationForm extends React.Component {
     
@@ -44,7 +45,10 @@ export class HashVerificationForm extends React.Component {
                     <h1>Enter Certificate Transaction Hash to Verify:</h1>
                     <form className='form' onSubmit={this.handleSubmit}>
                         <input className="hashinput" type="text" id="hash" name={this.state.hash} onChange={this.handleChange} />
-                        <input className="submit" type="submit" value="Submit" />
+                        <Button className="submit" variant="contained" type="submit" value="Submit">
+                            Submit
+                        </Button>
+
                     </form>
                     {this.state.submitted && this.renderVerificationSuccessful()}
                 </div>
