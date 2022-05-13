@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useAuth } from './contexts/AuthContext.js'
 import { useNavigate, Link } from 'react-router-dom'
+import Button from '@mui/material/Button'
 
 export function IssuerLoginForm() {
 
@@ -40,7 +41,7 @@ export function IssuerLoginForm() {
                         <Link className='link' to="/issuer/resetpassword">Forgot Password</Link>
                         <Link className="link" to="/issuer/createaccount">Register Issuer Account</Link>
                     </div>
-                    <button className='login' disabled={loading} type="submit">Login</button>
+                    <Button className='login' variant="contained" disabled={loading} type="submit">Login</Button>
                 </form>
             </div>
         </div>

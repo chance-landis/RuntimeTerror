@@ -3,6 +3,7 @@ import { Link, Navigate } from 'react-router-dom'
 import { mintNFT } from './util/interact'
 import { useNavigate } from 'react-router-dom'
 import { CallToActionSharp } from '@mui/icons-material';
+import Button from '@mui/material/Button'
 
 export function IssuerMintPage() {
 
@@ -41,11 +42,11 @@ export function IssuerMintPage() {
                     </div>
                     
                     <div className='mint_info'>
-                        <p>Current fee to mint is:</p>
-                        <p>$5.83 USD</p>
-                        <p>100 GWEI</p>
+                        <p>Current fee to mint is:<br/>
+                        $5.83 USD <br/>
+                        100 GWEI</p>
                     </div>
-                    <button className="mint_button" type='submit'>Mint Certification</button>
+                    <Button className="mint_button" variant="contained" type='submit'>Mint Certification</Button>
                 </form>
             </div>
         </div>

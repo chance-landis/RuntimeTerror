@@ -62,7 +62,7 @@ export function WorkerPage() {
 
                     <div className='certification_wrapper'>
                         <h3>Looking to verify a certification?</h3>
-                        <Button variant="contained"href="/hashverify">Verify Certification</Button>
+                        <Button variant="contained" href="/hashverify">Verify Certification</Button>
                     </div>
 
                 </div>
