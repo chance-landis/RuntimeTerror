@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
-import { Link, Navigate } from 'react-router-dom'
 import { mintNFT } from './util/interact'
 import { useNavigate } from 'react-router-dom'
-import { CallToActionSharp } from '@mui/icons-material';
 import Button from '@mui/material/Button'
 
 export function IssuerMintPage() {
@@ -18,9 +16,14 @@ export function IssuerMintPage() {
             console.log('Worker IDs do not match')
             return;
         }
-        await mintNFT(workerIDRef.current.value).then((hash) => {
-            console.log("hash: " + hash)
-            navigate('/issuer/mintsuccess', {state: {hash: hash, workerID: workerIDRef.current.value} });
+        await mintNFT(workerIDRef.current.value).then((result) => {
+            if (result == 1) {
+                console.log('You cannot issue to the same wallet you are issuing from')
+                return;
+            } else {
+                console.log("hash: " + result)
+                navigate('/issuer/mintsuccess', {state: {hash: result, workerID: workerIDRef.current.value} });
+            }
         });
     };
       

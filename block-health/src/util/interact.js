@@ -8,6 +8,11 @@ const web3 = createAlchemyWeb3(alchemyKey);
 
 
 export async function mintNFT(targetWalletID) {
+
+  if (targetWalletID == fromWalletID) {
+    return 1;
+  }
+
   let name = "BlockHealthMint"
   let url = "https://gateway.pinata.cloud/ipfs/QmPEEHvS6QaCfkN7iGLxbfHYqTvMV8svCtbeUi72tEN9mK"
   let description = "Block Health Test Mint"
