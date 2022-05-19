@@ -18,4 +18,4 @@ How can modern workers be empowered through blockchain technology to take indivi
 
 ---
 ### Presentation Video
-[Presentation Slides]
+[https://www.youtube.com/watch?v=Yf4lcKCNcFA](https://www.youtube.com/watch?v=Yf4lcKCNcFA)
